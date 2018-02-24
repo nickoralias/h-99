@@ -1,2 +1,2 @@
-range :: Int -> Int -> [Int]
-range from to = drop (from - 1) $ take to [1..]
+insertAt :: a -> [a] -> Int -> [a]
+insertAt x xs n = (take (n-1) xs) ++ [x] ++ (drop (n-1) xs)
